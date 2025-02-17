@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İşitme Hakkında Bilgi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #B22222;
+            --secondary-color: #7EC0EE;
+        }
+        .info-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .faq .card {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo2.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/hizmetler.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="info-header">
+        <h1>İşitme Hakkında Bilgi</h1>
+        <p>İşitme sağlığı ve cihazları hakkında bilmeniz gerekenler</p>
+    </header>
+    
+    <section class="content container">
+        <h2>İşitme Kaybı Nedir?</h2>
+        <p>İşitme kaybı, sesleri algılamada zorluk yaşama durumudur. Farklı seviyeleri ve türleri vardır: iletim tipi, sensörinöral ve mikst tip işitme kayıpları.</p>
+        
+        <h2>İşitme Cihazları Nasıl Çalışır?</h2>
+        <p>İşitme cihazları, sesi yükselterek işitme kaybı olan kişilerin daha iyi duymasını sağlar. Çeşitli modelleri ve teknolojileri mevcuttur.</p>
+        
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="faq">
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="question1">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                                İşitme cihazları her yaştan kişi için uygun mu?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="answer1" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="card-body">Evet, işitme cihazları her yaş grubu için uygundur ve kişiye özel olarak ayarlanabilir.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="question2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                                İşitme cihazı kullanmak işitmeyi düzeltebilir mi?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="answer2" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="card-body">İşitme cihazları işitme kaybını tedavi etmez ancak sesleri netleştirerek iletişimi kolaylaştırır.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center p-4" style="background-color: var(--secondary-color); color: white;">
+        <p>© 2025 İşitme Cihazları Kliniği. Tüm hakları saklıdır.</p>
+        <p>Telefon: 0532 058 50 20 | Email: <a href="mailto:aybelklinikisitme@gmail.com" style="color: white;">aybelklinikisitme@gmail.com</a></p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
